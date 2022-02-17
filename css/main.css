@@ -1,0 +1,214 @@
+/*Обнуление*/
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+html,body{
+   font-family: 'Source Serif Pro', serif;
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+input,button,textarea{
+	font-family:inherit;
+}
+button{
+	cursor: pointer;
+}
+.btn {
+   display: flex;
+   min-height: 49px;
+   padding: 5px 10px;
+   color: #fff;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   line-height: 126%;
+   letter-spacing: 0.02em;
+   font-size: 15px;
+   background-color: green;
+   border-radius: 25px;
+}
+ul, li{
+   display: block;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+p {
+   margin: 0;
+   padding: 0;
+}
+a {
+   text-decoration: none;
+   color: #000;
+}
+img{
+	display: block;
+   object-fit: cover;
+   max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+   font-family: Source Serif Pro;
+   font-weight: 600;
+   line-height: 126%;
+   letter-spacing: 0.23em;
+   color: #58e0ac;
+   font-size: 35px;
+   text-transform: uppercase;
+}
+
+/*---CASE------------------------------------------------------------------------------------------------------------*/
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+._container {
+   max-width: 1290px;
+   margin: 0 auto;
+   padding: 0px 15px;
+   box-sizing: content-box;
+}
+/*---HEADER------------------------------------------------------------------------------------------------------------*/
+.header {
+    padding: 50px 0;
+    text-align: center;
+}
+/*---HEADER------------------------------------------------------------------------------------------------------------*/
+.main {
+    height: 1000px;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+@media (max-width: 660px){
+    .main__content {
+        justify-content: center;
+    }
+}
+.content__item {
+    padding: 35px 20px 20px 20px;
+    width: 300px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    max-height: 471px;
+}
+.content__item:hover {
+    overflow: visible;
+    max-height: 100%;
+}
+.item-content__code {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ccc;
+    font-size: 13px;
+}
+.item-content__image {
+    display: block;
+    background: url('../img/main.jpg') center no-repeat;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    transition: background .2s ease .2s;
+}
+.item-content__image:hover {
+    background: url('../img/hover.jpg') center no-repeat;
+}
+.item-content__info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item-content__promotion {
+    display: flex;
+    gap: 5px;
+}
+.item-content__discount {
+    padding: 2px 5px;
+    background-color: red;
+    color: #fff;
+    border-radius: 3px;
+}
+.item-content__name {
+    color: #000;
+    font-size: 15px;
+    line-height: 1.15;
+    font-weight: 400;
+}
+.item-content__reviews {
+    display: flex;
+    align-items: center;
+}
+.item-content__stars {
+    display: flex;
+    gap: 3px;
+    margin-right: 15px;
+}
+.item-content__star {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('../img/icon-star.svg') center / cover;
+}
+.item-content__comment {
+    font-size: 14px;
+    color: #ccc;
+}
+.item-content__price {
+
+}
+.content-price__coin {
+    font-size: 12px;
+    color: #ccc;
+}
+.content-price__cost {
+    display: flex;
+    align-items: center;
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+}
+.content-price__cost::after {
+    content: '+ 69 грн кешбек';
+    display: block;
+    background-color: #E0BF75;
+    font-size: 12px;
+    color: #000;
+    padding: 2px;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+.content-price__discount {
+    color: #ccc;
+}
+.item-content__footer {
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-content__buy {
+    min-width: 160px;
+}
+.item-content__favorite {
+    display: block;
+    background: url('../img/icon-heart.svg') center / cover;
+    width: 23px;
+    height: 20px;
+}
+.item-content__comparison {
+    display: block;
+    background: url('../img/icon-compare.svg') center / cover;
+    width: 25px;
+    height: 25px;
+}
